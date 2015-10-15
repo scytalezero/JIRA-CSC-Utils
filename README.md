@@ -14,7 +14,6 @@ Tampermonkey and Greasemonkey will periodically check for updates from this repo
 
 # Features
 At the moment only one feature is implemented:
-- Automatic description template
+- **Automatic description template**: When you click the description section of a task that has no description, a template will automatically be inserted for you:
 
-When you click the description section of a task that has no description, a template will automatically be inserted for you:
 ![Description](/Images/Description.png)
