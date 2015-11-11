@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          JIRA Enhancements for CSC
 // @namespace     http://csc.com/
-// @version       0.3
+// @version       0.4
 // @description   Adds a description template to new JIRA tasks.
 // @homepageURL   https://github.com/scytalezero/JIRA-CSC-Utils
 // @updateURL     https://github.com/scytalezero/JIRA-CSC-Utils/raw/master/JIRA-CSC-Utils.user.js
@@ -16,7 +16,7 @@ Out("Adding description watcher");
 jQuery("body").on('DOMSubtreeModified',function() { 
   if ( (jQuery("#description").length > 0) && (jQuery("#description").text().length === 0) ) { 
     Out("Adding description template");
-    jQuery("#description").text("Business Impact: \n\nDescription: \n\nSteps to Recreate:\n# \n\nExpected Results: \n\nResolution Description: \n\nSVN Revision/s: ");
+    jQuery("#description").text("*Business Impact:* \n\n*Description:* \n\n*Steps to Recreate:*\n# \n\n*Expected Results:* \n\n*Resolution Description:* \n\n*SVN Revision/s:* ");
   }
 })
 
