@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          JIRA Enhancements for CSC
 // @namespace     http://csc.com/
-// @version       0.5
+// @version       0.6
 // @description   Adds a description template to new JIRA tasks.
 // @homepageURL   https://github.com/scytalezero/JIRA-CSC-Utils
 // @updateURL     https://github.com/scytalezero/JIRA-CSC-Utils/raw/master/JIRA-CSC-Utils.user.js
@@ -26,6 +26,7 @@ function fixMytime() {
   window.setInterval(function() {
     if ( ($("#location").length > 0) && ($("#location").val() === "") ) {
       $("#location").val("WL01").selectmenu("refresh");
+      $("#timeInput").focus().select();
     }
   }, 500);
 }
